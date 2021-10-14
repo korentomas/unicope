@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  height: 100%;
+  background: hsl(290, 34%, 10%);
+  overflow: hidden;
+  font-family: 'Roboto Slab', serif;
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 18rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+
+}
+
+#nav {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  color: white;
+  margin-top: -10px;
+  margin-left: 0px;  // looks like bootstrap is putting a left margin on your #nav you may want it off.
+  margin-bottom: 0px;
+  
+}
+
+.nav-links {
+color: white; 
+
+}
+  
+.nav-links:hover {
+color: #ff7d14; /*will change color of text within the element on hover */
+}
+
+
+.title-empty {
+      text-align: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 4em;
+      background: -webkit-linear-gradient(-86deg, #f94327 0%, #ff7d14 74%);
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 0.06em transparent;
+      color: hsl(290, 34%, 10%);
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      font-weight: 700;
+
+}
+
+.title-full {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4em;
+  background: -webkit-linear-gradient(-86deg, #f94327 0%, #ff7d14 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0px;
+}
+
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    }
+  @return unquote($value)
+}
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(300);
+$shadows-big:    multiple-box-shadow(150);
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+
+  &:after{
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      box-shadow: $shadows-small;
+  }
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+
+  &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 3px;
+      height: 3px;
+      background: transparent;
+      box-shadow: $shadows-big;
+  }
+}
+
+@keyframes animStar{
+  from{	
+    transform: translateY(-400px)}
+  to{	
+    transform: translateY(-200vh)}
+  }
+
+@keyframes floating {
+      from { transform: translate(0,  0px); }
+      65%  { transform: translate(0, 5px); }
+      to   { transform: translate(0, -0px); }    
+}
