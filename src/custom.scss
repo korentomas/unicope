@@ -1,0 +1,6 @@
+$theme-colors: (
+  "primary": hsl(26, 100%, 53%),
+  "danger": #ff4136
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
