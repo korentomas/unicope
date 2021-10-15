@@ -21,11 +21,10 @@ body {
 }
 
 .card {
-  width: 18rem;
+  width: 20rem;
   margin: 0 auto;
   float: none;
   margin-bottom: 10px;
-
 }
 
 #nav {
@@ -54,13 +53,19 @@ color: #ff7d14; /*will change color of text within the element on hover */
       text-align: center;
       font-family: 'Space Grotesk', sans-serif;
       font-size: 5em;
-      background: -webkit-linear-gradient(-86deg, #f94327 0%, #ff7d14 74%);
+      background: -webkit-linear-gradient(-86deg, #f12711 0%, #ff7d14 74%);
+      //background: #CA5E10;
+      //background: -webkit-linear-gradient(top left, #CA5E10, #E0A90F);
+      //background: -moz-linear-gradient(top left, #CA5E10, #E0A90F);
+      //background: linear-gradient(to bottom right, #CA5E10, #E0A90F);
       -webkit-background-clip: text;
       -webkit-text-stroke: 0.06em transparent;
       color: hsl(290, 34%, 10%);
       margin-bottom: 0px;
       padding-bottom: 0px;
       font-weight: 700;
+
+
 
 }
 

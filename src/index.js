@@ -43,10 +43,9 @@ function App() {
         <Card.Body>
           <Card.Title>Estamos buscando sponsors</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Queremos contar con tu empresa para llevar a cabo nuestra visión.
           </Card.Text>
-          <Button variant="success">¡Comprar ahora!</Button>
+          <Button variant="primary">¡Contáctanos!</Button>
         </Card.Body>
       </Card>
 
