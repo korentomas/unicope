@@ -3,8 +3,8 @@
 @import './custom.scss';
 
 :root {
-  --purple-cosmos-color : hsl(290, 34%, 10%);
-  --sweet-orange-color : hsl(26, 100%, 53%);
+  --purple-cosmos-color: hsl(290, 34%, 10%);
+  --sweet-orange-color: hsl(26, 100%, 53%);
 }
 
 body {
@@ -14,22 +14,21 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
-
 .nav-links {
   color: white;
-  }
+}
 
 .nav-links:hover {
-color: var(--sweet-orange-color);
+  color: var(--sweet-orange-color);
 }
 
 .nav-links:focus {
   color: var(--sweet-orange-color);
   font-weight: bold;
 }
-  
 
-.floating {  
+
+.floating {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -51,39 +50,41 @@ color: var(--sweet-orange-color);
   padding: 0;
   color: white;
   margin-top: -10px;
-  margin-left: 0px;  // looks like bootstrap is putting a left margin on your #nav you may want it off.
+  margin-left: 0px; // looks like bootstrap is putting a left margin on your #nav you may want it off.
   margin-bottom: 0px;
   font-size: 1.2em;
-  
+
 }
 
 
 .title-empty {
-      text-align: center;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 5em;
-      background: -webkit-linear-gradient(-86deg, #f12711 0%, #ff7d14 74%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-stroke: 0.06em transparent;
-      color: hsl(290, 34%, 10%);
-      margin-bottom: 0px;
-      padding-bottom: 0px;
-      font-weight: 700;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 5em;
+  background: -webkit-linear-gradient(-86deg, #f12711 0%, #ff7d14 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.06em transparent;
+  color: var(--purple-cosmos-color);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: 700;
 
 }
 
 @function multiple-box-shadow ($n) {
   $value: '#{random(3000)}px #{random(3000)}px #FFF';
+
   @for $i from 2 through $n {
     $value: '#{$value} , #{random(3000)}px #{random(3000)}px #FFF';
-    }
+  }
+
   @return unquote($value)
 }
 
-$shadows-small:  multiple-box-shadow(2000);
+$shadows-small: multiple-box-shadow(2000);
 $shadows-medium: multiple-box-shadow(500);
-$shadows-big:    multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(200);
 
 #stars {
   width: 1px;
@@ -92,14 +93,14 @@ $shadows-big:    multiple-box-shadow(200);
   box-shadow: $shadows-small;
   animation: animStar 50s linear infinite;
 
-  &:after{
-      content: " ";
-      position: absolute;
-      top: 2000px;
-      width: 1px;
-      height: 1px;
-      background: transparent;
-      box-shadow: $shadows-small;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
   }
 }
 
@@ -109,7 +110,7 @@ $shadows-big:    multiple-box-shadow(200);
   background: transparent;
   box-shadow: $shadows-medium;
   animation: animStar 100s linear infinite;
-    
+
   &:after {
     content: " ";
     position: absolute;
@@ -129,26 +130,84 @@ $shadows-big:    multiple-box-shadow(200);
   animation: animStar 150s linear infinite;
 
   &:after {
-      content: " ";
-      position: absolute;
-      top: 2000px;
-      width: 3px;
-      height: 3px;
-      background: transparent;
-      box-shadow: $shadows-big;
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
   }
 }
 
-@keyframes animStar{
-  from{	
-    transform: translateY(-400px)}
-  to{	
-    transform: translateY(-2000px)}
+@keyframes animStar {
+  from {
+    transform: translateY(-400px)
   }
+
+  to {
+    transform: translateY(-2000px)
+  }
+}
 
 @keyframes floating {
-      from { transform: translate(0,  0px); }
-      65%  { transform: translate(0, 5px); }
-      to   { transform: translate(0, -0px); }    
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 5px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
 }
 
+@media only screen and (min-width: 768px) {
+
+  /* tablets and desktop */
+  .card {
+    width: 20rem;
+  }
+
+  #nav {
+    font-size: 1.5em;
+  }
+
+  .title-empty {
+    font-size: 6em;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+  /* portrait phones */
+
+  #card-sponsors {
+
+    .card {
+      width: 16rem;
+      height: auto;
+    }
+
+    .card-title {
+      font-size: 1.2em;
+    }
+
+    .card-text {
+      margin: 0;
+      display: none;
+    }
+
+    Button {
+      margin: 0;
+    }
+  }
+}

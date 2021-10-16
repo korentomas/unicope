@@ -26,7 +26,11 @@ function App() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="https://koren.empretienda.com.ar/" target="_blank" eventKey="link-1" className="nav-links">
+              <Nav.Link
+                href="https://koren.empretienda.com.ar/"
+                target="_blank"
+                className="nav-links"
+              >
                 Tienda
               </Nav.Link>
             </Nav.Item>
@@ -39,13 +43,18 @@ function App() {
         </Row>
       </Container>
 
-      <Card className="card">
+      <Card className="card" id="card-sponsors">
         <Card.Body>
-          <Card.Title>Estamos buscando sponsors</Card.Title>
-          <Card.Text>
-            Queremos contar con tu empresa para llevar a cabo nuestra visión.
+          <Card.Title className="card-title">
+            Estamos buscando sponsors
+          </Card.Title>
+          <Card.Text className="card-text">
+            Queremos contar con tu empresa u organización para llevar a cabo
+            nuestra visión.
           </Card.Text>
-          <Button variant="primary" style={{color:"white"}}>¡Contáctanos!</Button>
+          <Button variant="primary" style={{ color: "white" }}>
+            ¡Contáctanos!
+          </Button>
         </Card.Body>
       </Card>
 
