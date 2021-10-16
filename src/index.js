@@ -1,4 +1,5 @@
 import { Nav, Card, Button, Container, Row } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -8,6 +9,13 @@ import "./module.scss";
 function App() {
   return (
     <div styles={{ height: "10px", overflowY: "scroll" }}>
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </Helmet>
+
       <Container className="floating">
         <Row>
           <span className="title-empty">unicope</span>
@@ -43,6 +51,10 @@ function App() {
         </Row>
       </Container>
 
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+
       <Card className="card" id="card-sponsors">
         <Card.Body>
           <Card.Title className="card-title">
@@ -57,11 +69,6 @@ function App() {
           </Button>
         </Card.Body>
       </Card>
-
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-
     </div>
   );
 }
