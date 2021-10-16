@@ -7,7 +7,7 @@ import "./module.scss";
 
 function App() {
   return (
-    <>
+    <div styles={{ height: "10px", overflowY: "scroll" }}>
       <Container className="floating">
         <Row>
           <span className="title-empty">unicope</span>
@@ -61,7 +61,8 @@ function App() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-    </>
+
+    </div>
   );
 }
 
