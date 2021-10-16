@@ -1,4 +1,4 @@
-import { Nav, Card, Button, Container, Row } from "react-bootstrap";
+import { Nav, Card, Button, Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { ScrollView } from "@cantonjs/react-scroll-view";
 
@@ -60,6 +60,10 @@ function App() {
               </Nav>
             </Row>
           </Container>
+
+         
+            <Row className="main-text-row">Que la astronomia sea accesible.<br/>Así compartiremos el cielo.</Row>
+         
 
           <Card className="card" id="card-sponsors">
             <Card.Body>

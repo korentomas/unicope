@@ -27,6 +27,23 @@ body {
   font-weight: bold;
 }
 
+.main-text-row {
+  justify-content: center;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.8em;
+  background: -webkit-linear-gradient(-86deg, #f12711 0%, #ff7d14 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 40px;
+
+}
 
 .floating {
   animation-name: floating;
@@ -49,8 +66,7 @@ body {
   text-align: center;
   padding: 0;
   color: white;
-  margin-top: -10px;
-  margin-left: 0px; // looks like bootstrap is putting a left margin on your #nav you may want it off.
+  margin-top: -12px;
   margin-bottom: 0px;
   font-size: 1.2em;
 
@@ -69,7 +85,6 @@ body {
   margin-bottom: 0px;
   padding-bottom: 0px;
   font-weight: 700;
-
 }
 
 @function multiple-box-shadow ($n) {
