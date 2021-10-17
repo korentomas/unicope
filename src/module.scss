@@ -30,16 +30,15 @@ body {
 .main-text-row {
   justify-content: center;
   text-align: center;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 1.8em;
   background: -webkit-linear-gradient(-86deg, #f12711 0%, #ff7d14 74%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  font-weight: 700;
+  font-weight: bold;
   margin-top: 5px;
   margin-bottom: 40px;
 
@@ -106,7 +105,7 @@ $shadows-big: multiple-box-shadow(200);
   height: 1px;
   background: transparent;
   box-shadow: $shadows-small;
-  animation: animStar 50s linear infinite;
+  animation: animStar 75s linear infinite;
 
   &:after {
     content: " ";
