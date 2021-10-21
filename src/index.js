@@ -1,7 +1,7 @@
 import { Nav, Card, Button, Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { ScrollView } from "@cantonjs/react-scroll-view";
-
+import vicky from './assets/vicky.jpg'
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -61,9 +61,22 @@ function App() {
             </Row>
           </Container>
 
-         
-            <Row id="main-text-row">Que la astronomia sea accesible.<br/>Así compartiremos el cielo.</Row>
-         
+          <Row id="main-text-row">
+            Que la astronomia sea accesible.
+            <br />
+            Así compartiremos el cielo.
+          </Row>
+
+          <Card style={{ width: "18rem" }}>
+            <Card.Img variant="top" style={{height:'auto',width:'100%'}} src={ vicky }/>
+            <Card.Body>
+              <Card.Title>imagina que esto es un telescopio</Card.Title>
+              <Card.Text>
+                wow que linda que es .. digo, que lindo telescopio🤩
+              </Card.Text>
+              <Button variant="primary" style={{ color: "white" }}>comprar</Button>
+            </Card.Body>
+          </Card>
 
           <Card className="card" id="card-sponsors">
             <Card.Body>
