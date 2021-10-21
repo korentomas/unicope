@@ -62,7 +62,7 @@ function App() {
           </Container>
 
          
-            <Row className="main-text-row">Que la astronomia sea accesible.<br/>Así compartiremos el cielo.</Row>
+            <Row id="main-text-row">Que la astronomia sea accesible.<br/>Así compartiremos el cielo.</Row>
          
 
           <Card className="card" id="card-sponsors">
