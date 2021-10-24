@@ -5,6 +5,8 @@ import ReactDOM from "react-dom";
 import { NavigationBar } from "./components/navibar";
 import { Stars } from "./components/stars";
 import { Home } from "./components/home";
+import { Contact } from "./components/contact";
+
 import "./module.scss";
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
       <ScrollView style={{ height: "100vh" }}>
         <div
           styles={{
+            height: "10px",
             overflowY: "scroll",
             display: "none",
             whiteSpace: "nowrap"
@@ -28,6 +31,8 @@ function App() {
         >
           <NavigationBar />
           <Stars />
+          {/* Acá se debería cambiar el contenido según el estado de la navbar.
+          Si el estado es Home, mostrar Home, si es Contacto mostrar contacto. */}
           <Home />
         </div>
       </ScrollView>
