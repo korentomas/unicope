@@ -1,18 +1,27 @@
 import { Helmet } from "react-helmet";
 import { ScrollView } from "@cantonjs/react-scroll-view";
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import { NavigationBar } from "./components/navibar";
 import { Stars } from "./components/stars";
 import { Home } from "./components/home";
 import { Contact } from "./components/contact";
+import { Navbar, Nav } from "react-bootstrap";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { withRouter } from "react-router";
 
 import "./module.scss";
 
+const Header = props => {
+  const { location } = props;
+  return <NavigationBar />;
+};
+
+const HeaderWithRouter = withRouter(Header);
+
 function App() {
-  var page = "home";
   return (
-    <div>
+    <div className="App">
       <Helmet>
         <meta
           name="viewport"
@@ -29,11 +38,15 @@ function App() {
             whiteSpace: "nowrap"
           }}
         >
-          <NavigationBar />
-          <Stars />
-          {/* Acá se debería cambiar el contenido según el estado de la navbar.
-          Si el estado es Home, mostrar Home, si es Contacto mostrar contacto. */}
-          <Home />
+          <Router>
+            <Fragment>
+              <HeaderWithRouter />
+              <Stars />
+              <Route path="/" exact component={Home} />
+
+              <Route path="/contacto" exact component={Contact} />
+            </Fragment>
+          </Router>
         </div>
       </ScrollView>
     </div>

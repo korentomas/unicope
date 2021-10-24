@@ -17,7 +17,7 @@ class NavigationBar extends React.Component {
             id="nav"
           >
             <Nav.Item>
-              <Nav.Link href="" className="nav-links">
+              <Nav.Link href="/" className="nav-links">
                 Inicio
               </Nav.Link>
             </Nav.Item>
@@ -33,7 +33,7 @@ class NavigationBar extends React.Component {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link href="" className="nav-links">
+              <Nav.Link href="/contacto" className="nav-links">
                 Contacto
               </Nav.Link>
             </Nav.Item>
