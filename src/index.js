@@ -28,23 +28,13 @@ function App() {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </Helmet>
-
       <Stars />
       <Router>
         <Fragment>
           <ScrollView style={{ height: "100vh" }}>
-            <div
-              styles={{
-                height: "10px",
-                overflowY: "scroll",
-                display: "none",
-                whiteSpace: "nowrap"
-              }}
-            >
-              <HeaderWithRouter />
-              <Route path="/" exact component={Home} />
-              <Route path="/contacto" exact component={Contact} />
-            </div>
+            <HeaderWithRouter />
+            <Route path="/" exact component={Home} />
+            <Route path="/contacto" exact component={Contact} />
           </ScrollView>
         </Fragment>
       </Router>
