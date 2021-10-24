@@ -7,6 +7,11 @@
   --sweet-orange-color: hsl(26, 100%, 53%);
 }
 
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
 body {
   height: 100vh;
   background: var(--purple-cosmos-color);
