@@ -1,7 +1,7 @@
 import { Nav, Card, Button, Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { ScrollView } from "@cantonjs/react-scroll-view";
-import vicky from './assets/vicky.jpg'
+import telescopio_pic from './assets/telescopio.jpeg'
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -67,12 +67,12 @@ function App() {
             Así compartiremos el cielo.
           </Row>
 
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" style={{height:'auto',width:'100%'}} src={ vicky }/>
+          <Card style={{ width: "25rem" , marginBottom: "80px"}}>
+            <Card.Img variant="top" style={{height:'auto',width:'100%'}} src={ telescopio_pic }/>
             <Card.Body>
-              <Card.Title>imagina que esto es un telescopio</Card.Title>
+              <Card.Title>fabricamos telescopios accesibles</Card.Title>
               <Card.Text>
-                wow que linda que es .. digo, que lindo telescopio🤩
+                ya podes conseguir el tuyo!
               </Card.Text>
               <Button variant="primary" style={{ color: "white" }}>comprar</Button>
             </Card.Body>
