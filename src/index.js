@@ -29,26 +29,25 @@ function App() {
         />
       </Helmet>
 
-      <ScrollView style={{ height: "100vh" }}>
-        <div
-          styles={{
-            height: "10px",
-            overflowY: "scroll",
-            display: "none",
-            whiteSpace: "nowrap"
-          }}
-        >
-          <Router>
-            <Fragment>
+      <Stars />
+      <Router>
+        <Fragment>
+          <ScrollView style={{ height: "100vh" }}>
+            <div
+              styles={{
+                height: "10px",
+                overflowY: "scroll",
+                display: "none",
+                whiteSpace: "nowrap"
+              }}
+            >
               <HeaderWithRouter />
-              <Stars />
               <Route path="/" exact component={Home} />
-
               <Route path="/contacto" exact component={Contact} />
-            </Fragment>
-          </Router>
-        </div>
-      </ScrollView>
+            </div>
+          </ScrollView>
+        </Fragment>
+      </Router>
     </div>
   );
 }
