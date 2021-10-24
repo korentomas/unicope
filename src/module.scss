@@ -27,6 +27,9 @@ body {
   font-weight: bold;
 }
 
+#card-buy{width: 25rem;
+margin-bottom: 80px;}
+
 #main-text-row {
   justify-content: center;
   text-align: center;
@@ -226,5 +229,7 @@ $shadows-big: multiple-box-shadow(200);
   }
 
   #main-text-row{font-size: 1.4em;}
+
+  #card-buy{width: 15rem;}
 
 }
