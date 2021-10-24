@@ -37,6 +37,10 @@ body {
   margin-bottom: 80px;
 }
 
+#card-sponsors {
+  margin-bottom: 40px;
+}
+
 .container {
   width: 500px;
 }
@@ -133,10 +137,6 @@ $shadows-big: multiple-box-shadow(200);
     background: transparent;
     box-shadow: $shadows-small;
   }
-}
-
-#card-sponsors {
-  margin-bottom: 40px;
 }
 
 #stars2 {

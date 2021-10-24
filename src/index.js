@@ -6,14 +6,12 @@ import { NavigationBar } from "./components/navibar";
 import { Stars } from "./components/stars";
 import { Home } from "./components/home";
 import { Contact } from "./components/contact";
-import { Navbar, Nav } from "react-bootstrap";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { withRouter } from "react-router";
 
 import "./module.scss";
 
 const Header = props => {
-  const { location } = props;
   return <NavigationBar />;
 };
 
@@ -31,7 +29,7 @@ function App() {
       <Stars />
       <Router>
         <Fragment>
-          <ScrollView style={{ height: "100vh" }}>
+          <ScrollView style={{height: "100vh" }}>
             <HeaderWithRouter />
             <Route path="/" exact component={Home} />
             <Route path="/contacto" exact component={Contact} />
