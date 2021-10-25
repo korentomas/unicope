@@ -8,7 +8,7 @@ import { Home } from "./components/home";
 import { Contact } from "./components/contact";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { withRouter } from "react-router";
-
+import { NotFound } from "./components/notfound";
 import "./module.scss";
 
 const Header = props => {
@@ -32,6 +32,7 @@ function App() {
             <HeaderWithRouter />
             <Route path="/" exact component={Home} />
             <Route path="/contacto" exact component={Contact} />
+            <Route component={NotFound} />
           </Fragment>
         </Router>
       </ScrollView>

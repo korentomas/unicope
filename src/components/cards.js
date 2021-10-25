@@ -5,9 +5,9 @@ import React from "react";
 class Banner extends React.Component {
   render() {
     return (
-      <Row className="linear-wipe">
+      <h1 className="linear-wipe">
         per aspera ad astra
-      </Row>
+      </h1>
     );
   }
 }
