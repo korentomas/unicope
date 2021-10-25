@@ -38,7 +38,7 @@ body {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 2em;
 
-  background: linear-gradient(to right, #ff7d14 20%, #f12711 40%, #f12711 60%, #ff7d14 80%);
+  background: linear-gradient(to right, #ff7d14 20%, #ff5714 40%, #ff5714 60%, #ff7d14 80%);
   background-size: 200% auto;
 
   color: #000;
@@ -52,7 +52,7 @@ body {
   margin-top: 5px;
   margin-bottom: 20px;
 
-  animation: shine 5s linear infinite;
+  animation: shine 10s linear infinite;
 
   @keyframes shine {
     to {
