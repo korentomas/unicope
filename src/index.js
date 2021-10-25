@@ -26,7 +26,6 @@ function App() {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </Helmet>
-      <Stars />
       <Router>
         <Fragment>
           <ScrollView style={{ height: "100vh" }}>
