@@ -32,7 +32,34 @@ body {
   font-weight: bold;
 }
 
+.linear-wipe {
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 2em;
 
+  background: linear-gradient(to right, #ff7d14 20%, #f12711 40%, #f12711 60%, #ff7d14 80%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+  animation: shine 5s linear infinite;
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
 
 .container {
   width: 500px;
@@ -42,23 +69,6 @@ body {
   color: white;
 }
 
-#main-text-row {
-  justify-content: center;
-  text-align: center;
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 1.8em;
-  background: -webkit-linear-gradient(-86deg, #f12711 0%, #ff7d14 74%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 40px;
-
-}
-
 .floating {
   width: auto;
   animation-name: floating;
@@ -66,7 +76,7 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .card {

@@ -5,10 +5,8 @@ import React from "react";
 class Banner extends React.Component {
   render() {
     return (
-      <Row id="main-text-row">
-        Que la astronomia sea accesible.
-        <br />
-        Así compartiremos el cielo.
+      <Row className="linear-wipe">
+        per aspera ad astra
       </Row>
     );
   }
@@ -42,7 +40,12 @@ class ImgCard extends React.Component {
         <Card.Body>
           <Card.Title>Fabricamos telescopios de bajo costo</Card.Title>
           <Card.Text>Ya podes conseguir el tuyo!</Card.Text>
-          <Button variant="primary" style={{ color: "white" }} href="https://koren.empretienda.com.ar/" target="_blank">
+          <Button
+            variant="primary"
+            style={{ color: "white" }}
+            href="https://koren.empretienda.com.ar/"
+            target="_blank"
+          >
             ¡Comprar!
           </Button>
         </Card.Body>
