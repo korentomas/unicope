@@ -29,6 +29,7 @@ function App() {
       <Router>
         <Fragment>
           <ScrollView style={{ height: "100vh" }}>
+            <Stars />
             <HeaderWithRouter />
             <Route path="/" exact component={Home} />
             <Route path="/contacto" exact component={Contact} />
