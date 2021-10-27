@@ -7,6 +7,14 @@
   --sweet-orange-color: hsl(26, 100%, 53%);
 }
 
+* {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 img {
   pointer-events: none;
   user-select: none;
