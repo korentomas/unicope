@@ -247,7 +247,42 @@ $shadows-big: multiple-box-shadow(200);
 }
 
 @media only screen and (max-width: 767px) {
-  /* phones */
+   /* portrait phones */
+
+   #card-sponsors {
+    margin-bottom: 20px;
+
+    .card {
+      width: 16rem;
+      height: auto;
+
+    }
+
+    .card-title {
+      font-size: 1.2em;
+    }
+
+    .card-text {
+      margin: 0;
+      display: none;
+    }
+
+    Button {
+      margin: 0;
+    }
+  }
+
+  #main-text-row {
+    font-size: 1.4em;
+  }
+
+  #card-buy {
+    width: 16rem;
+  }
+
+  #card-contact {
+    width: 16rem;
+  }
 
 }
 
