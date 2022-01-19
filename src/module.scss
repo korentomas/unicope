@@ -247,10 +247,9 @@ $shadows-big: multiple-box-shadow(200);
 }
 
 @media only screen and (max-width: 767px) {
-   /* portrait phones */
 
    #card-sponsors {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
     .card {
       width: 16rem;
